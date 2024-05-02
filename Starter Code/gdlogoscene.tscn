@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0t6xyly6re2r"]
+
+[ext_resource type="Texture2D" uid="uid://rb8smo0f45mc" path="res://icon.svg" id="1_bimjn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6yfxu"]
+size = Vector2(129, 126)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="GDLogoSpawn" type="Sprite2D" parent="RigidBody2D"]
+position = Vector2(534, 238)
+texture = ExtResource("1_bimjn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(535.5, 238)
+shape = SubResource("RectangleShape2D_6yfxu")
