@@ -13,3 +13,4 @@ func _input(event):
 		##var tween = create_tween().set_trans(Tween.TRANS_CIRC)
 		##tween.tween_property($"../block", "global_position", event.position, 1.0)
 	pass
+	
